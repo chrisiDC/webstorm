@@ -1,0 +1,25 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern=".node-inspectorrc" type="JSON" />
+      <mapping pattern="jsdoc" type="PLAIN_TEXT" />
+      <mapping pattern="run" type="PLAIN_TEXT" />
+      <mapping pattern="build-release" type="PLAIN_TEXT" />
+      <mapping pattern="devstart" type="PLAIN_TEXT" />
+      <mapping pattern="make" type="PLAIN_TEXT" />
+      <mapping pattern="update" type="PLAIN_TEXT" />
+      <mapping pattern="mongo" type="PLAIN_TEXT" />
+      <mapping pattern="doku" type="PLAIN_TEXT" />
+      <mapping pattern="build-dev" type="PLAIN_TEXT" />
+      <mapping pattern="makeplugin" type="PLAIN_TEXT" />
+      <mapping pattern="todo" type="PLAIN_TEXT" />
+      <mapping pattern="update-release" type="PLAIN_TEXT" />
+      <mapping pattern="deploycommands" type="PLAIN_TEXT" />
+      <mapping pattern="install" type="PLAIN_TEXT" />
+      <mapping ext="map" type="PLAIN_TEXT" />
+      <mapping ext="project" type="PLAIN_TEXT" />
+      <mapping ext="java" type="PLAIN_TEXT" />
+      <mapping ext="m" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
