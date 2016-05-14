@@ -1,0 +1,669 @@
+<templateSet group="Foundation6">
+  <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/$VALUE$.css&quot;/&gt;" description="CDN css Foundation 6.2.1" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation-flex&quot;, &quot;foundation-rtl&quot;, &quot;foundation.min&quot;, &quot;foundation-flex.min&quot;, &quot;foundation-rtl.min&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-cdn-motion-ui-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.js&quot;&gt;&lt;/script&gt;" description="CDN js Motion UI Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="zf-cdn-wow-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js&quot;&gt;&lt;/script&gt;" description="CDN Wow.js  Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="zf-cdn-motion-ui-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.0/motion-ui.min.css&quot; /&gt;" description="CDN css Motion UI Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="zf-cdn-lib" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.2.1/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;$SUPLIB$$LAST$&#10;" description="CDN js lib Foundation 6.2.1" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VALUE" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUPLIB" expression="&quot;zf-cdn-lib&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-cdn-lib-util" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.2.1/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js.lib.util Foundation 6.2.1" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VALUE" expression="enum(&quot;util.box&quot;, &quot;util.keyboard&quot;, &quot;util.mediaQuery&quot;, &quot;util.motion&quot;, &quot;util.nest&quot;, &quot;util.timerAndImageLoader&quot;, &quot;util.touch&quot;, &quot;util.triggers&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-cdn-icons" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-$VALUE$&quot;/&gt;" description="CDN icons Foundation 3.0" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VALUE" expression="enum(&quot;icons.min.css&quot;, &quot;icons.css&quot;, &quot;icons.eot&quot;, &quot;icons.svg&quot;, &quot;icons.ttf&quot;, &quot;icons.woff&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.2.1/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js Foundation 6.2.1" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VALUE" expression="enum(&quot;min&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-cdn-jquery" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/2.2.0/$VALUE$&quot;&gt;&lt;/script&gt;&#10;" description="CDN jquery 2.2.0 Foundation" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VALUE" expression="enum(&quot;jquery.min.js&quot;, &quot;jquery.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-cdn-jssor-slider" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jssor.slider/19.0.1/jssor.slider.mini.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN jssor slider 19.0.1 Foundation" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="zf-cdn-datepicker" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation.datepicker/0.1/js/foundation-datepicker.js&quot;&gt;&lt;/script&gt;&#10;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation.datepicker/0.1/stylesheets/foundation-datepicker.css&quot;/&gt;&#10;$END$" description="CDN datepicker Foundation" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/2.2.0/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.2.1/js/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;$LIBSUPP$$LAST$&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VALUE" expression="enum(&quot;jquery.min.js&quot;, &quot;jquery.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="LIBSUPP" expression="&quot;zf-cdn-lib&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ltro" value="&lt;div class=&quot;row&quot;&gt;&#10;  {&lt;\div class=&quot;$SIZ$-$NB$ $CUST$columns&quot;&gt;&lt;\/div&gt;}*$NBD$$LAST$&#10;&lt;/div&gt;" description="Row Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="CUST" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBD" expression="&quot;Nb_Div?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ltrof" value="&lt;div class=&quot;row$HPOS$$VPOS$&quot;&gt;&#10;  {&lt;\div class=&quot;column $SIZ$-$NB$&quot;&gt;&lt;\/div&gt;}*$NBD$$LAST$&#10;&lt;/div&gt;" description="Row Flex  Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="HPOS" expression="enum(&quot;&quot;, &quot; align-right&quot;, &quot; align-left&quot;, &quot; align-center&quot;, &quot; align-justify&quot;, &quot; align-spaced&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VPOS" expression="enum(&quot;&quot;, &quot; align-top&quot;, &quot; align-middle&quot;, &quot; align-bottom&quot;, &quot; align-stretch&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBD" expression="&quot;Nb_Div?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ltso" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$TYPE$-$NB1$ $TYPE$-push-$NB2$ columns&quot;&gt;$CONTENT1$&lt;/div&gt;&#10;  &lt;div class=&quot;$TYPE$-$NB2$ $TYPE$-pull-$NB1$ columns&quot;&gt;$CONTENT2$&lt;/div&gt;&#10;&lt;/div&gt;&#10;" description="Row Source Ordering Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="TYPE" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB1" expression="castToLeftSideType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ltbg" value="&lt;div class=&quot;row small-up-$OPT1$ medium-up-$OPT2$ large-up-$OPT3$&quot;&gt;&#10;    div.column*$OPT4$$END$&#10;&lt;/div&gt;" description="Row Block Grids Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="&quot;Nb_Col?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="&quot;Nb_Col?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT3" expression="&quot;Nb_Col?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT4" expression="&quot;Nb_Div?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ltcu" value="&lt;div class=&quot;row small-$CU1$ medium-$CU2$ large-$CU3$&quot;&gt;&#10;  $END$&#10;&lt;/div&gt;" description="Row Collapse/Uncollapse Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="CU1" expression="enum(&quot;collapse&quot;, &quot;uncollapse&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="CU2" expression="enum(&quot;collapse&quot;, &quot;uncollapse&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="CU3" expression="enum(&quot;collapse&quot;, &quot;uncollapse&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="lc" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add large column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mc" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add medium column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="sc" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add small column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ADDsmall-column-item" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add small column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADD" expression="enum(&quot;ADDsmall-column-item&quot;, &quot;ADDmedium-column-item&quot;, &quot;ADDlarge-column-item&quot;, &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ADDmedium-column-item" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add medium column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADD" expression="enum(&quot;ADDmedium-column-item&quot;, &quot;ADDsmall-column-item&quot;, &quot;ADDlarge-column-item&quot;, &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ADDlarge-column-item" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add large column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADD" expression="enum(&quot;ADDlarge-column-item&quot;, &quot;ADDmedium-column-item&quot;, &quot;ADDsmall-column-item&quot;,  &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ADDsmall-medium-large-column-item" value="&lt;div class=&quot;small-$OPT1$ medium-$OPT2$ large-$OPT3$ columns&quot;&gt;&#10;    $OPT5$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add small medium large column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT5" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADD" expression="enum(&quot;ADDsmall-medium-large-column-item&quot;, &quot;ADDmedium-column-item&quot;, &quot;ADDlarge-column-item&quot;, &quot;ADDsmall-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="txta" value="class=&quot;text-$OPT$&quot;" description="Text Alignment Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT" expression="enum(&quot;left&quot;, &quot;right&quot;, &quot;center&quot;, &quot;justify&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-crbta" value="&lt;a href=&quot;#$VAR2$&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/a&gt;&#10;$END$" description="Button Anchors (links) Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-crbt" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/button&gt;&#10;$END$" description="Button (actions) Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-crbtd" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/button&gt;&#10;$END$" description="Button dropdown (actions) Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="enum(&quot;dropdown &quot;, &quot;tiny dropdown &quot;, &quot;small dropdown &quot;, &quot;large dropdown &quot;, &quot;expanded dropdown &quot;, &quot;small expanded dropdown &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-crbtc" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;&#10;  &lt;span class=&quot;show-for-sr&quot;&gt;$VAR1$&lt;/span&gt;&#10;  &lt;span aria-hidden=&quot;true&quot;&gt;$VAR2$&lt;/span&gt;&#10;&lt;/button&gt;&#10;$END$" description="Button Accessibility (actions) Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="&quot;For Screen Readers!&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="&quot;Visible not Readable!&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-crbtg" value="&lt;div class=&quot;$OPT1$$OPT2$button-group&quot;&gt;&#10;  &lt;a class=&quot;button&quot;&gt;$VAR1$&lt;/a&gt;&#10;  &lt;a class=&quot;button&quot;&gt;$VAR2$&lt;/a&gt;&#10;  &lt;a class=&quot;button&quot;&gt;$VAR3$&lt;/a&gt;&#10;&lt;/div&gt;&#10;$END$" description="Button Group Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR3" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-crcbt" value="&lt;div class=&quot;callout&quot;&gt;&#10;  &lt;button class=&quot;close-button&quot; aria-label=&quot;Close alert&quot; type=&quot;button&quot;&gt;&#10;    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;p&gt;$TEXT$&lt;/p&gt;&#10;&lt;/div&gt;&#10;$END$" description="Close Button Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="TEXT" expression="&quot;&lt;!-- Text to close! --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ctmd" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot; data-toggle=&quot;$MOD$&quot;&gt;$VAR1$&lt;/button&gt;&#10;&lt;div class=&quot;$OPT$reveal&quot; id=&quot;$MOD$&quot; data-reveal data-close-on-click=&quot;true&quot;&gt;&#10;  $CNT$&#10;  &lt;button class=&quot;close-button&quot; data-close aria-label=&quot;Close reveal&quot; type=&quot;button&quot;&gt;&#10;    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&#10;  &lt;/button&gt;&#10;&lt;/div&gt;&#10;" description="Revea Modal Foundation6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="MOD" expression="&quot;ID?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;full &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="CNT" expression="&quot;&lt;!-- Content Modal --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-cttb" value="table$OPT$&gt;(thead[summary=&quot;&quot;]&gt;tr&gt;th[width=&quot;&quot;]*$NBTH$)+tbody&gt;tr*$NBTR1$&gt;td*$NBTH$$END$" description="Tables Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT" expression="enum(&quot;&quot;, &quot;.hover&quot;, &quot;.stack&quot;, &quot;.scroll&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBTH" expression="&quot;Columns-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBTR1" expression="&quot;Raw-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-lbmu" value="&lt;button type=&quot;button&quot; class=&quot;button$OPT1$$COL$&quot; data-toggle=&quot;$ID$&quot; aria-controls=&quot;$ID$&quot;&gt;$TITLE$&lt;/button&gt;&#10;&lt;div data-toggler id=&quot;$ID$&quot; data-animate=&quot;$IN$$OUT$&quot; class=&quot;callout$OPT2$&quot;&gt;&#10;  &lt;!-- Animated Content --&gt;$LAST$&#10;&lt;/div&gt;" description="Motion-ui Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT1" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;, &quot; expanded&quot;, &quot; small expanded&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL" expression="enum(&quot;&quot;, &quot; success &quot;, &quot; secondary &quot;, &quot; alert &quot;, &quot; warning &quot;, &quot; info &quot;, &quot; disabled &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="&quot;id?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="&quot;Title_Button?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="IN" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+    <variable name="OUT" expression="enum(&quot; slide-out-down&quot;, &quot; slide-out-right&quot;, &quot; slide-out-up&quot;, &quot; slide-out-left&quot;, &quot; fade-out&quot;, &quot; hinge-out-from-top&quot;, &quot; hinge-out-from-right&quot;, &quot; hinge-out-from-bottom&quot;, &quot; hinge-out-from-left&quot;, &quot; hinge-out-from-middle-x&quot;, &quot; hinge-out-from-middle-y&quot;, &quot; scale-out-up&quot;, &quot; scale-out-down&quot;, &quot; spin-out&quot;, &quot; spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="enum(&quot;&quot;, &quot; secondary&quot;, &quot; primary&quot;, &quot; success&quot;, &quot; warning&quot;, &quot; alert&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="---::" value="---&#10;$ONE$: $ONE1$&#10;$TWO$: $TWO1$&#10;---&#10;$END$" description="Front Matter Block Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ONE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ONE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TWO" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TWO1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="---:" value="---&#10;$ONE$: $ONE1$&#10;---&#10;$END$" description="Front Matter Block Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ONE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ONE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="{#" value="{{#$last$ }}" description="{{# }} Prototype Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="last" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="{&gt;" value="{{&gt; $last$}}" description="{{&gt; }} Prototype  Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="last" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mo-in" value="$IN$" description="IN Motion-ui" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="IN" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mo-out" value="$OUT$" description="OUT Motion-ui" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OUT" expression="enum(&quot;slide-out-down&quot;, &quot;slide-out-right&quot;, &quot;slide-out-up&quot;, &quot;slide-out-left&quot;, &quot;fade-out&quot;, &quot;hinge-out-from-top&quot;, &quot;hinge-out-from-right&quot;, &quot;hinge-out-from-bottom&quot;, &quot;hinge-out-from-left&quot;, &quot;hinge-out-from-middle-x&quot;, &quot;hinge-out-from-middle-y&quot;, &quot;scale-out-up&quot;, &quot;scale-out-down&quot;, &quot;spin-out&quot;, &quot;spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mo-in-out" value="$IN$$OUT$" description="IN OUT Motion UI" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="IN" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+    <variable name="OUT" expression="enum(&quot; slide-out-down&quot;, &quot; slide-out-right&quot;, &quot; slide-out-up&quot;, &quot; slide-out-left&quot;, &quot; fade-out&quot;, &quot; hinge-out-from-top&quot;, &quot; hinge-out-from-right&quot;, &quot; hinge-out-from-bottom&quot;, &quot; hinge-out-from-left&quot;, &quot; hinge-out-from-middle-x&quot;, &quot; hinge-out-from-middle-y&quot;, &quot; scale-out-up&quot;, &quot; scale-out-down&quot;, &quot; spin-out&quot;, &quot; spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="mo-data-animation" value="data-animation-in=&quot;$IN$&quot; data-animation-out=&quot;$OUT$&quot;" description="data-animation-in&amp;out Motion UI" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="IN" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+    <variable name="OUT" expression="enum(&quot; slide-out-down&quot;, &quot; slide-out-right&quot;, &quot; slide-out-up&quot;, &quot; slide-out-left&quot;, &quot; fade-out&quot;, &quot; hinge-out-from-top&quot;, &quot; hinge-out-from-right&quot;, &quot; hinge-out-from-bottom&quot;, &quot; hinge-out-from-left&quot;, &quot; hinge-out-from-middle-x&quot;, &quot; hinge-out-from-middle-y&quot;, &quot; scale-out-up&quot;, &quot; scale-out-down&quot;, &quot; spin-out&quot;, &quot; spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-nvbm" value="&lt;ul class=&quot;menu$OPTIONS$&quot;&gt;&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Basics Menu Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="OPTIONS" expression="enum(&quot;&quot;, &quot; align-right&quot;, &quot; expanded&quot;, &quot; vertical&quot;, &quot; simple&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-nvim" value="&lt;ul class=&quot;menu$TOP$$OPTIONS$&quot;&gt;&#10;  li*$ITEM$&gt;a[#]{&lt;\i class=&quot;fi-&quot;&gt;&lt;\/i&gt;}&gt;span$END$&#10;&lt;/ul&gt;&#10;" description="Icons Menu Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="TOP" expression="enum(&quot;&quot;, &quot; icon-top&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPTIONS" expression="enum(&quot;&quot;, &quot; align-right&quot;, &quot; expanded&quot;, &quot; vertical&quot;, &quot; simple&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-nvdm" value="&lt;ul class=&quot;$OPT$&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Dropdown Menus Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT" expression="enum(&quot;dropdown menu\&quot; data-dropdown-menu&gt;&quot;, &quot;vertical dropdown menu\&quot; data-dropdown-menu style=\&quot;max-width: 300px;\&quot;&gt;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-nvdl" value="&lt;ul class=&quot;vertical menu&quot; $ATR$ style=&quot;max-width:$WIDTH$px&quot;&gt;&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Drilldown Menus Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ATR" expression="&quot;data-drilldown&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="WIDTH" expression="&quot;Max-Width?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="sub-dropdown-drilldown" value="&lt;li class=&quot;menu&quot;&gt;&#10;  &lt;a href=&quot;#&quot;&gt;$SUB$&lt;/a&gt;&#10;  &lt;ul class=&quot;menu&quot;&gt;&#10;    li*$ITEM$&gt;a[#]$END$&#10;  &lt;/ul&gt;&#10;&lt;/li&gt;" shortcut="TAB" description="Sub Menu Dropdown Drilldown Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="SUB" expression="&quot;SubMenu?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-nvtb" value="&lt;div class=&quot;top-bar&quot;&gt;&#10;  &lt;div class=&quot;top-bar-$OPT1$&quot;&gt;&#10;    &lt;ul class=&quot;dropdown menu&quot; data-dropdown-menu&gt;&#10;      &lt;li class=&quot;menu-text&quot;&gt;$TITLE1$&lt;/li&gt;&#10;      li*$ITEM$&gt;a[#]$TITLE2$&#10;    &lt;/ul&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;top-bar-$OPT2$&quot;&gt;&#10;    &lt;ul class=&quot;menu&quot;&gt;&#10;      &lt;li&gt;&lt;input type=&quot;search&quot; placeholder=&quot;$PLACE$&quot;&gt;&lt;/li&gt;&#10;      &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;$BUTT$&lt;/button&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Top Bar Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="TITLE1" expression="&quot;Title?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT1" expression="enum(&quot;left&quot;, &quot;right&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="enum(&quot;left&quot;, &quot;right&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="BUTT" expression="&quot;Title Button?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLACE" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="4" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="sub-top-bar" value="&lt;li class=&quot;has-submenu&quot;&gt;&#10;  &lt;a href=&quot;#&quot;&gt;$SUB$&lt;/a&gt;&#10;  &lt;ul class=&quot;submenu menu vertical&quot; data-submenu&gt;&#10;    li*$ITEM$&gt;a[#]$END$&#10;  &lt;/ul&gt;&#10;&lt;/li&gt;" description="Sub Menu Top Bar Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="SUB" expression="&quot;SubMenu?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-nvrm" value="&lt;ul class=&quot;vertical menu&quot; data-responsive-menu=&quot;drilldown medium-dropdown&quot; style=&quot;width: $SIZE$px;&quot;&gt;&#10;    &lt;li class=&quot;has-submenu&quot;&gt;&#10;        &lt;a href=&quot;#&quot;&gt;$SUB1$&lt;/a&gt;&#10;        &lt;ul class=&quot;vertical submenu menu&quot; data-submenu id=&quot;$ID1$&quot;&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$SUB2$&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li class=&quot;has-submenu&quot;&gt;&#10;                &lt;a href=&quot;#&quot;&gt;$SUB3$&lt;/a&gt;&#10;                &lt;ul class=&quot;vertical submenu menu&quot; data-submenu id=&quot;$ID2$&quot;&gt;&#10;                    li*$ITEM$&gt;a[#]$TITLE2$&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/li&gt;&#10;    &lt;!-- sub-responsive --&gt;&#10;&lt;/ul&gt;" description="Responsive Menu Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZE" expression="&quot;Width?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUB1" expression="&quot;Menu_Title?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID1" expression="&quot;id?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUB2" expression="&quot;Sub_Menu_Title?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUB3" expression="&quot;Sub_Menu_Link?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="&quot;id?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="sub-responsive" value="&lt;li class=&quot;has-submenu&quot;&gt;&#10;  &lt;a href=&quot;#&quot;&gt;$SUB1$&lt;/a&gt;&#10;  &lt;ul class=&quot;vertical submenu menu&quot; data-submenu&gt;&#10;    li*$ITEM$&gt;a[#]$TITLE2$&#10;  &lt;/ul&gt;&#10;&lt;/li&gt;" description="Sub Responsive Menu Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="SUB1" expression="&quot;Submenu?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-nvrt" value="&lt;div class=&quot;title-bar&quot; data-responsive-toggle=&quot;$ID$&quot; data-hide-for=&quot;medium&quot;&gt;&#10;    &lt;button class=&quot;menu-icon&quot; type=&quot;button&quot; data-toggle&gt;&lt;/button&gt;&#10;    &lt;div class=&quot;title-bar-title&quot;&gt;Menu&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;top-bar&quot; id=&quot;$ID$&quot;&gt;&#10;    &lt;div class=&quot;top-bar-left&quot;&gt;&#10;        &lt;ul class=&quot;dropdown menu&quot; data-dropdown-menu&gt;&#10;            &lt;li class=&quot;menu-text&quot;&gt;$TITLE$&lt;/li&gt;&#10;            li*$ITEM$&gt;a[#]$TITLE2$&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;top-bar-right&quot;&gt;&#10;        &lt;ul class=&quot;menu&quot;&gt;&#10;            &lt;li&gt;&lt;input type=&quot;search&quot; placeholder=&quot;$PLAC$&quot;&gt;&lt;/li&gt;&#10;            &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;$BUTT$&lt;/button&gt;&lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;" description="Responsive Toggle Menu Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="TITLE" expression="&quot;Main_Title?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="&quot;id_Target?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLAC" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="BUTT" expression="&quot;Title_Button?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-nvbr" value="&lt;nav aria-label=&quot;$SCR$&quot; role=&quot;navigation&quot;&gt;&#10;  &lt;ul class=&quot;breadcrumbs&quot;&gt;&#10;    li*$ITEM$&gt;a[#]$TITLE2$&#10;    &lt;li class=&quot;disabled&quot;&gt;$TXT1$&lt;/li&gt;&#10;    &lt;li&gt;&#10;      &lt;span class=&quot;show-for-sr&quot;&gt;$TXT2$ &lt;/span&gt; $TXT3$&#10;    &lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/nav&gt;" description="Breadcrumbs Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="SCR" expression="&quot;Screen reader Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TXT1" expression="&quot;Disabled Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TXT2" expression="&quot;Show for SR?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TXT3" expression="&quot;Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-nvpg" value="&lt;ul class=&quot;pagination$TEXTCENT$&quot; role=&quot;navigation&quot; aria-label=&quot;Pagination&quot;&gt;&#10;  &lt;li class=&quot;pagination-previous disabled&quot;&gt;Previous&lt;/li&gt;&#10;  &lt;li class=&quot;current&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;You're on page&lt;/span&gt; 1&lt;/li&gt;&#10;  {&lt;\li&gt;&lt;\a href=&quot;#&quot; aria-label=&quot;Page $&quot;&gt;$&lt;\/a&gt;&lt;\/li&gt;}*$PAGES$&#10;  &lt;li class=&quot;ellipsis&quot;&gt;&lt;/li&gt;&#10;  &lt;!-- past pages here! --&gt;&#10;  &lt;li class=&quot;pagination-next&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot;Next page&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;&#10;&lt;/ul&gt;" description="Pagination Foundation 6" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="TEXTCENT" expression="enum(&quot;&quot;, &quot; text-center&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="PAGES" expression="&quot;Numbers of Pages?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fi-" value="$ICONLIST$$END$" description="283  Foundation Icon Fonts 3" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ICONLIST" expression="enum(&quot;fi-address-book&quot;, &quot;fi-alert&quot;, &quot;fi-align-center&quot;, &quot;fi-align-justify&quot;, &quot;fi-align-left&quot;, &quot;fi-align-right&quot;, &quot;fi-anchor&quot;, &quot;fi-annotate&quot;, &quot;fi-archive&quot;, &quot;fi-arrow-down&quot;, &quot;fi-arrow-left&quot;, &quot;fi-arrow-right&quot;, &quot;fi-arrow-up&quot;, &quot;fi-arrows-compress&quot;, &quot;fi-arrows-expand&quot;, &quot;fi-arrows-in&quot;, &quot;fi-arrows-out&quot;, &quot;fi-asl&quot;, &quot;fi-asterisk&quot;, &quot;fi-at-sign&quot;, &quot;fi-background-color&quot;, &quot;fi-battery-empty&quot;, &quot;fi-battery-full&quot;, &quot;fi-battery-half&quot;, &quot;fi-bitcoin-circle&quot;, &quot;fi-bitcoin&quot;, &quot;fi-blind&quot;, &quot;fi-bluetooth&quot;, &quot;fi-bold&quot;, &quot;fi-book-bookmark&quot;, &quot;fi-book&quot;, &quot;fi-bookmark&quot;, &quot;fi-braille&quot;, &quot;fi-burst-new&quot;, &quot;fi-burst-sale&quot;, &quot;fi-burst&quot;, &quot;fi-calendar&quot;, &quot;fi-camera&quot;, &quot;fi-check&quot;, &quot;fi-checkbox&quot;, &quot;fi-clipboard-notes&quot;, &quot;fi-clipboard-pencil&quot;, &quot;fi-clipboard&quot;, &quot;fi-clock&quot;, &quot;fi-closed-caption&quot;, &quot;fi-cloud&quot;, &quot;fi-comment-minus&quot;, &quot;fi-comment-quotes&quot;, &quot;fi-comment-video&quot;, &quot;fi-comment&quot;, &quot;fi-comments&quot;, &quot;fi-compass&quot;, &quot;fi-contrast&quot;, &quot;fi-credit-card&quot;, &quot;fi-crop&quot;, &quot;fi-crown&quot;, &quot;fi-css3&quot;, &quot;fi-database&quot;, &quot;fi-die-five&quot;, &quot;fi-die-four&quot;, &quot;fi-die-one&quot;, &quot;fi-die-six&quot;, &quot;fi-die-three&quot;, &quot;fi-die-two&quot;, &quot;fi-dislike&quot;, &quot;fi-dollar-bill&quot;, &quot;fi-dollar&quot;, &quot;fi-download&quot;, &quot;fi-eject&quot;, &quot;fi-elevator&quot;, &quot;fi-euro&quot;, &quot;fi-eye&quot;, &quot;fi-fast-forward&quot;, &quot;fi-female-symbol&quot;, &quot;fi-female&quot;, &quot;fi-filter&quot;, &quot;fi-first-aid&quot;, &quot;fi-flag&quot;, &quot;fi-folder-add&quot;, &quot;fi-folder-lock&quot;, &quot;fi-folder&quot;, &quot;fi-foot&quot;, &quot;fi-foundation&quot;, &quot;fi-graph-bar&quot;, &quot;fi-graph-horizontal&quot;, &quot;fi-graph-pie&quot;, &quot;fi-graph-trend&quot;, &quot;fi-guide-dog&quot;, &quot;fi-hearing-aid&quot;, &quot;fi-heart&quot;, &quot;fi-home&quot;, &quot;fi-html5&quot;, &quot;fi-indent-less&quot;, &quot;fi-indent-more&quot;, &quot;fi-info&quot;, &quot;fi-italic&quot;, &quot;fi-key&quot;, &quot;fi-laptop&quot;, &quot;fi-layout&quot;, &quot;fi-lightbulb&quot;, &quot;fi-like&quot;, &quot;fi-link&quot;, &quot;fi-list-bullet&quot;, &quot;fi-list-number&quot;, &quot;fi-list-thumbnails&quot;, &quot;fi-list&quot;, &quot;fi-lock&quot;, &quot;fi-loop&quot;, &quot;fi-magnifying-glass&quot;, &quot;fi-mail&quot;, &quot;fi-male-female&quot;, &quot;fi-male-symbol&quot;, &quot;fi-male&quot;, &quot;fi-map&quot;, &quot;fi-marker&quot;, &quot;fi-megaphone&quot;, &quot;fi-microphone&quot;, &quot;fi-minus-circle&quot;, &quot;fi-minus&quot;, &quot;fi-mobile-signal&quot;, &quot;fi-mobile&quot;, &quot;fi-monitor&quot;, &quot;fi-mountains&quot;, &quot;fi-music&quot;, &quot;fi-next&quot;, &quot;fi-no-dogs&quot;, &quot;fi-no-smoking&quot;, &quot;fi-page-add&quot;, &quot;fi-page-copy&quot;, &quot;fi-page-csv&quot;, &quot;fi-page-delete&quot;, &quot;fi-page-doc&quot;, &quot;fi-page-edit&quot;, &quot;fi-page-export-csv&quot;, &quot;fi-page-export-doc&quot;, &quot;fi-page-export-pdf&quot;, &quot;fi-page-export&quot;, &quot;fi-page-filled&quot;, &quot;fi-page-multiple&quot;, &quot;fi-page-pdf&quot;, &quot;fi-page-remove&quot;, &quot;fi-page-search&quot;, &quot;fi-page&quot;, &quot;fi-paint-bucket&quot;, &quot;fi-paperclip&quot;, &quot;fi-pause&quot;, &quot;fi-paw&quot;, &quot;fi-paypal&quot;, &quot;fi-pencil&quot;, &quot;fi-photo&quot;, &quot;fi-play-circle&quot;, &quot;fi-play-video&quot;, &quot;fi-play&quot;, &quot;fi-plus&quot;, &quot;fi-pound&quot;, &quot;fi-power&quot;, &quot;fi-previous&quot;, &quot;fi-price-tag&quot;, &quot;fi-pricetag-multiple&quot;, &quot;fi-print&quot;, &quot;fi-prohibited&quot;, &quot;fi-projection-screen&quot;, &quot;fi-puzzle&quot;, &quot;fi-quote&quot;, &quot;fi-record&quot;, &quot;fi-refresh&quot;, &quot;fi-results-demographics&quot;, &quot;fi-results&quot;, &quot;fi-rewind-ten&quot;, &quot;fi-rewind&quot;, &quot;fi-rss&quot;, &quot;fi-safety-cone&quot;, &quot;fi-save&quot;, &quot;fi-share&quot;, &quot;fi-sheriff-badge&quot;, &quot;fi-shield&quot;, &quot;fi-shopping-bag&quot;, &quot;fi-shopping-cart&quot;, &quot;fi-shuffle&quot;, &quot;fi-skull&quot;, &quot;fi-social-500px&quot;, &quot;fi-social-adobe&quot;, &quot;fi-social-amazon&quot;, &quot;fi-social-android&quot;, &quot;fi-social-apple&quot;, &quot;fi-social-behance&quot;, &quot;fi-social-bing&quot;, &quot;fi-social-blogger&quot;, &quot;fi-social-delicious&quot;, &quot;fi-social-designer-news&quot;, &quot;fi-social-deviant-art&quot;, &quot;fi-social-digg&quot;, &quot;fi-social-dribbble&quot;, &quot;fi-social-drive&quot;, &quot;fi-social-dropbox&quot;, &quot;fi-social-evernote&quot;, &quot;fi-social-facebook&quot;, &quot;fi-social-flickr&quot;, &quot;fi-social-forrst&quot;, &quot;fi-social-foursquare&quot;, &quot;fi-social-game-center&quot;, &quot;fi-social-github&quot;, &quot;fi-social-google-plus&quot;, &quot;fi-social-hacker-news&quot;, &quot;fi-social-hi5&quot;, &quot;fi-social-instagram&quot;, &quot;fi-social-joomla&quot;, &quot;fi-social-lastfm&quot;, &quot;fi-social-linkedin&quot;, &quot;fi-social-medium&quot;, &quot;fi-social-myspace&quot;, &quot;fi-social-orkut&quot;, &quot;fi-social-path&quot;, &quot;fi-social-picasa&quot;, &quot;fi-social-pinterest&quot;, &quot;fi-social-rdio&quot;, &quot;fi-social-reddit&quot;, &quot;fi-social-skillshare&quot;, &quot;fi-social-skype&quot;, &quot;fi-social-smashing-mag&quot;, &quot;fi-social-snapchat&quot;, &quot;fi-social-spotify&quot;, &quot;fi-social-squidoo&quot;, &quot;fi-social-stack-overflow&quot;, &quot;fi-social-steam&quot;, &quot;fi-social-stumbleupon&quot;, &quot;fi-social-treehouse&quot;, &quot;fi-social-tumblr&quot;, &quot;fi-social-twitter&quot;, &quot;fi-social-vimeo&quot;, &quot;fi-social-windows&quot;, &quot;fi-social-xbox&quot;, &quot;fi-social-yahoo&quot;, &quot;fi-social-yelp&quot;, &quot;fi-social-youtube&quot;, &quot;fi-social-zerply&quot;, &quot;fi-social-zurb&quot;, &quot;fi-sound&quot;, &quot;fi-star&quot;, &quot;fi-stop&quot;, &quot;fi-strikethrough&quot;, &quot;fi-subscript&quot;, &quot;fi-superscript&quot;, &quot;fi-tablet-landscape&quot;, &quot;fi-tablet-portrait&quot;, &quot;fi-target-two&quot;, &quot;fi-target&quot;, &quot;fi-telephone-accessible&quot;, &quot;fi-telephone&quot;, &quot;fi-text-color&quot;, &quot;fi-thumbnails&quot;, &quot;fi-ticket&quot;, &quot;fi-torso-business&quot;, &quot;fi-torso-female&quot;, &quot;fi-torso&quot;, &quot;fi-torsos-all-female&quot;, &quot;fi-torsos-all&quot;, &quot;fi-torsos-female-male&quot;, &quot;fi-torsos-male-female&quot;, &quot;fi-torsos&quot;, &quot;fi-trash&quot;, &quot;fi-trees&quot;, &quot;fi-trophy&quot;, &quot;fi-underline&quot;, &quot;fi-universal-access&quot;, &quot;fi-unlink&quot;, &quot;fi-unlock&quot;, &quot;fi-upload-cloud&quot;, &quot;fi-upload&quot;, &quot;fi-usb&quot;, &quot;fi-video&quot;, &quot;fi-volume-none&quot;, &quot;fi-volume-strike&quot;, &quot;fi-volume&quot;, &quot;fi-web&quot;, &quot;fi-wheelchair&quot;&quot;, &quot;fi-widget&quot;, &quot;fi-wrench&quot;, &quot;fi-x-circle&quot;, &quot;fi-x&quot;, &quot;fi-yen&quot;, &quot;fi-zoom-in&quot;, &quot;fi-zoom-out&quot;) " defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ctac" value="&lt;ul class=&quot;accordion&quot; $ATR$ role=&quot;tablist&quot; data-allow-all-closed=&quot;$CHO1$&quot; data-multi-expand=&quot;$CHO2$&quot;&gt;&#10;    {&lt;\li class=&quot;accordion-$ITEM$$OPT2$&quot;&gt;&lt;\a href=&quot;#$PANEL$$&quot; role=&quot;tab&quot; class=&quot;accordion-title&quot; id=&quot;$PANEL$$-heading&quot; aria-controls=&quot;$PANEL$&quot;&gt;Title_accordion_$$&lt;\/a&gt;&lt;\div id=&quot;$PANEL$$&quot; class=&quot;accordion-content&quot; role=&quot;tabpanel&quot; data-tab-content aria-labelledby=&quot;$PANEL$-heading&quot;&gt;&lt;!--content_$--&gt;&lt;\/div&gt;&lt;\/li&gt;}*$NBR$$LAST$&#10;&lt;/ul&gt;" description="Accordion  Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ATR" expression="&quot;data-accordion&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="CHO1" expression="enum(&quot;true&quot;, &quot;false&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="CHO2" expression="enum(&quot;true&quot;, &quot;false&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="&quot;item&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PANEL" expression="&quot;Id_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBR" expression="&quot;Nbre_Panels?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ADDaccordion" value="&lt;li class=&quot;accordion-$ITEM$$OPT2$&quot;&gt;&#10;  &lt;a href=&quot;#$ID$&quot; role=&quot;tab&quot; class=&quot;accordion-title&quot; id=&quot;$ID$-heading&quot; aria-controls=&quot;$ID$&quot;&gt;$TITLE$&lt;/a&gt;&#10;  &lt;div id=&quot;$ID$&quot; class=&quot;accordion-content&quot; role=&quot;tabpanel&quot; $AT1$ aria-labelledby=&quot;$ID$-heading&quot;&gt;&#10;    $EDIT$&#10;  &lt;/div&gt;&#10;&lt;/li&gt;&#10;$SUPP$$LAST$&#10;" description="ADDAccordion Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ITEM" expression="&quot;item&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="&quot;Panel ID?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="&quot;Title Accordion?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="AT1" expression="&quot;data-tab-content&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="EDIT" expression="&quot;&lt;!-- content pane here! --&gt;&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="SUPP" expression="&quot;ADDaccordion&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ctcl" value="&lt;div class=&quot;callout$COL$$SIZ$&quot;&gt;&#10;  $END$&#10;&lt;/div&gt;" description="Callout Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="COL" expression="enum(&quot;&quot;, &quot; secondary&quot;, &quot; primary&quot;, &quot; success&quot;, &quot; warning&quot;, &quot; alert&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SIZ" expression="enum(&quot;&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ctcc" value="&lt;div class=&quot;callout$COL$$SIZ$&quot; $ATR$&gt;&#10;  $END$&#10;  &lt;button class=&quot;close-button&quot; aria-label=&quot;Dismiss$COL$&quot; type=&quot;button&quot; data-close&gt;&#10;    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&#10;  &lt;/button&gt;&#10;&lt;/div&gt;" description="Callout Close Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="COL" expression="enum(&quot;&quot;, &quot; secondary&quot;, &quot; primary&quot;, &quot; success&quot;, &quot; warning&quot;, &quot; alert&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="SIZ" expression="enum(&quot;&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ATR" expression="&quot;data-closable&quot;" defaultValue="" alwaysStopAt="false" />
+    <context />
+  </template>
+  <template name="zf-ctdp" value="&lt;button class=&quot;button$COL$&quot; type=&quot;button&quot; data-toggle=&quot;$ID$&quot;&gt;$BUTT$&lt;/button&gt;&#10;&lt;div class=&quot;dropdown-pane$PLC$&quot; id=&quot;$ID$&quot; data-dropdown data-auto-focus=&quot;true&quot;$HOVR$&gt;&#10;  $CNT$&#10;&lt;/div&gt;&#10;" description="Dropdown Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="BUTT" expression="&quot;Button?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL" expression="enum(&quot;&quot;, &quot; secondary&quot;, &quot; primary&quot;, &quot; success&quot;, &quot; warning&quot;, &quot; alert&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="&quot;ID?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLC" expression="enum(&quot;&quot;, &quot; top&quot;, &quot; right&quot;, &quot; bottom&quot;, &quot; left&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="HOVR" expression="enum(&quot;&quot;, &quot; data-hover=\&quot;true\&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="CNT" expression="&quot;&lt;!-- Dropdown Content --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ctmo" value="&lt;div class=&quot;media-object$STK$&quot;&gt;&#10;  &lt;div class=&quot;media-object-section$PLC$&quot;&gt;&#10;    &lt;div class=&quot;thumbnail&quot;&gt;&#10;      &lt;img src=&quot;$SRC$&quot; alt=&quot;$ALT$&quot;&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  $SUP$$LAST$&#10;&lt;/div&gt;" description="Media Object Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="STK" expression="enum(&quot;&quot;, &quot; stack-for-small&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLC" expression="enum(&quot;&quot;, &quot; top&quot;, &quot; middle&quot;, &quot; bottom&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SRC" expression="&quot;src?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ALT" expression="&quot;alt,&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUP" expression="&quot;sup-media-object-section&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="sup-media-object-section" value="&lt;div class=&quot;media-object-section$PLC$&quot;&gt;&#10;  &lt;div class=&quot;thumbnail&quot;&gt;&#10;    &lt;img src=&quot;$SRC$&quot; alt=&quot;$ALT$&quot;&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;$SUP$$LAST$&#10;" description="Sup Media Object Section Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="PLC" expression="enum(&quot;&quot;, &quot; top&quot;, &quot; middle&quot;, &quot; bottom&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SRC" expression="&quot;src?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ALT" expression="&quot;alt?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUP" expression="&quot;sup-media-object-section&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-ctof" value="&lt;div class=&quot;off-canvas-wrapper&quot;&gt;&#10;    &lt;div class=&quot;off-canvas-wrapper-inner&quot; data-off-canvas-wrapper&gt;&#10;        &lt;div class=&quot;off-canvas position-$POS$$CT$&lt;/div&gt;&#10;        &lt;div class=&quot;off-canvas-content&quot; data-off-canvas-content&gt;&#10;           $CNT$&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;button type=&quot;button&quot; class=&quot;button&quot; data-toggle=&quot;offCanvas-$LR$&quot;&gt;$BUTT$&lt;/button&gt;&#10;&lt;/div&gt;&#10;" description="Off-canvas Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="POS" expression="enum(&quot;left\&quot; id=\&quot;offCanvas-left\&quot; data-off-canvas&gt;&quot;, &quot;right\&quot; id=\&quot;offCanvas-right\&quot; data-off-canvas data-position=\&quot;right\&quot;&gt;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="LR" expression="enum(&quot;left&quot;, &quot;right&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="BUTT" expression="&quot;Button Trigger?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="CT" expression="&quot;Content Menu?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="CNT" expression="&quot;&lt;!-- off-canvas-content --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-cttp" value="&lt;ul class=&quot;tabs&quot; $DATA$ id=&quot;$ID1$&quot;&gt;&#10;  &lt;li class=&quot;tabs-title is-active&quot;&gt;&lt;a href=&quot;#$ID2$&quot; aria-selected=&quot;true&quot;&gt;$TITLE$&lt;/a&gt;&lt;/li&gt;&#10;  $SUP$$lAST$&#10;&lt;/ul&gt;&#10;&lt;div class=&quot;tabs-content&quot; data-tabs-content=&quot;$ID1$&quot;&gt;&#10;  &lt;div class=&quot;tabs-panel is-active&quot; id=&quot;$ID2$&quot;&gt;&lt;!-- Content $ID2$ --&gt;&lt;/div&gt;&#10;&lt;/div&gt;" description="Tabs Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="TITLE" expression="&quot;Title_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATA" expression="&quot;data-tabs&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="ID1" expression="&quot;ID tabs-content?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="&quot;ID tabs-panel&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUP" expression="&quot;sup-tabs-panel&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="lAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-cttv" value="&lt;div class=&quot;small-$ROW1$ columns&quot;&gt;&#10;  &lt;ul class=&quot;tabs vertical&quot; $DATA$ id=&quot;$ID1$&quot;&gt;&#10;      &lt;li class=&quot;tabs-title is-active&quot;&gt;&lt;a href=&quot;#$ID2$&quot; aria-selected=&quot;true&quot;&gt;$TITLE$&lt;/a&gt;&lt;/li&gt;&#10;      $SUP$$lAST$&#10;  &lt;/ul&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;small-$ROW2$ columns&quot;&gt;&#10;  &lt;div class=&quot;tabs-content vertical&quot; data-tabs-content=&quot;$ID1$&quot;&gt;&#10;      &lt;div class=&quot;tabs-panel is-active&quot; id=&quot;$ID2$&quot;&gt;&lt;!-- Content $ID2$ --&gt;&lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Tabs Vertical Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ROW1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROW2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="&quot;Title_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATA" expression="&quot;data-tabs&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="ID1" expression="&quot;ID tabs-content?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="&quot;ID tabs-panel&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUP" expression="&quot;sup-tabs-panel&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="lAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="sup-tabs-panel" value="li.tabs-title&gt;a[#$ID1$]{$TITLE$}^div.tabs-panel[id=&quot;$ID1$&quot;]{&lt;!-- Content $ID1$ --&gt;}$LAST$" description="Sup Tabs Panel Tabs Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="TITLE" expression="&quot;Title_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID1" expression="&quot;ID tabs-panel?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-mdba" value="&lt;span class=&quot;$COLOR$badge&quot; id=&quot;$ID$&quot;&gt;$LAST$$EDIT$&lt;span class=&quot;show-for-sr&quot;&gt;$SCR$&lt;/span&gt;&lt;/span&gt;&#10;" description="Badge Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="COLOR" expression="enum(&quot;&quot;, &quot;info&quot;, &quot;secondary &quot;, &quot;success &quot;, &quot;alert &quot;, &quot;warning &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SCR" expression="&quot;Screen Reader?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="&quot;ID?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="enum(&quot;&quot;, &quot;icon-font&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="EDIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-mdfv" value="&lt;div class=&quot;flex-video$ADV$&quot;&gt;&#10;  &lt;iframe src=&quot;$PATH$&quot; width=&quot;$WIT$&quot; height=&quot;$HEI$&quot; frameborder=&quot;$FRAM$&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;&#10;&lt;/div&gt;$END$&#10;" description="Flex Video Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ADV" expression="enum(&quot;&quot;, &quot; widescreen&quot;, &quot; widescreen vimeo&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="&quot;#Path/to/video/file&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIT" expression="&quot;400&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEI" expression="&quot;225&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="FRAM" expression="&quot;0&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-mdla" value="&lt;span class=&quot;$COLOR$label&quot;&gt;$LAST$$EDIT$&lt;span class=&quot;show-for-sr&quot;&gt;$SCR$&lt;/span&gt;&lt;/span&gt;&#10;" description="Label Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="COLOR" expression="enum(&quot;&quot;, &quot;info &quot;, &quot;secondary &quot;, &quot;success &quot;, &quot;alert &quot;, &quot;warning &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="enum(&quot;&quot;, &quot;icon-font&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SCR" expression="&quot;Screen Reader?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="EDIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-mdos" value="&lt;div class=&quot;orbit&quot; role=&quot;region&quot; aria-label=&quot;$ARLB$&quot; $DTOR$&#10;  data-options=&quot;animInFromLeft:$INLEFT$; animInFromRight:$INRIGHT$; animOutToLeft:$OUTLEFT$; animOutToRight:$OUTRIGHT$;&quot;&gt;&#10;  &lt;ul class=&quot;orbit-container&quot;&gt;&#10;    &lt;button class=&quot;orbit-previous&quot; aria-label=&quot;previous&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;Previous Slide&lt;/span&gt;&amp;#9664;&lt;/button&gt;&#10;    &lt;button class=&quot;orbit-next&quot; aria-label=&quot;next&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;Next Slide&lt;/span&gt;&amp;#9654;&lt;/button&gt;&#10;    &lt;li class=&quot;orbit-slide is-active&quot;&gt;&#10;      &lt;div&gt;&lt;img class=&quot;orbit-image&quot; src=&quot;&quot; alt=&quot;&quot; /&gt;&#10;        &lt;figcaption class=&quot;orbit-caption&quot;&gt;&lt;/figcaption&gt;&#10;      &lt;/div&gt;&#10;    &lt;/li&gt;&#10;{&lt;\li class=&quot;orbit-slide&quot;&gt;&lt;\div&gt;&lt;\img class=&quot;orbit-image&quot; src=&quot;$SRC$&quot; alt=&quot;&quot; \/&gt;&lt;\figcaption class=&quot;orbit-caption&quot;&gt;&lt;\/figcaption&gt;&lt;\/div&gt;&lt;\/li&gt;}*$NB$$LAST$&#10;  &lt;/ul&gt;&#10;  &lt;nav class=&quot;orbit-bullets&quot;&gt;&#10;   &lt;button class=&quot;is-active&quot; data-slide=&quot;0&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;First slide details.&lt;/span&gt;&lt;span class=&quot;show-for-sr&quot;&gt;Current Slide&lt;/span&gt;&lt;/button&gt;&#10;{&lt;\button data-slide=&quot;$&quot;&gt;&lt;\span class=&quot;show-for-sr&quot;&gt;Screen_Reader_$&lt;\/span&gt;&lt;\/button&gt;}*$NB$   &#10; &lt;/nav&gt;&#10;&lt;/div&gt;" description="Orbit Slider Motion UI Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ARLB" expression="&quot;Aria Label?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="DTOR" expression="&quot;data-orbit&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="INLEFT" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="INRIGHT" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OUTLEFT" expression="enum(&quot;slide-out-down&quot;, &quot;slide-out-right&quot;, &quot;slide-out-up&quot;, &quot;slide-out-left&quot;, &quot;fade-out&quot;, &quot;hinge-out-from-top&quot;, &quot;hinge-out-from-right&quot;, &quot;hinge-out-from-bottom&quot;, &quot;hinge-out-from-left&quot;, &quot;hinge-out-from-middle-x&quot;, &quot;hinge-out-from-middle-y&quot;, &quot;scale-out-up&quot;, &quot;scale-out-down&quot;, &quot;spin-out&quot;, &quot;spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OUTRIGHT" expression="enum(&quot;slide-out-down&quot;, &quot;slide-out-right&quot;, &quot;slide-out-up&quot;, &quot;slide-out-left&quot;, &quot;fade-out&quot;, &quot;hinge-out-from-top&quot;, &quot;hinge-out-from-right&quot;, &quot;hinge-out-from-bottom&quot;, &quot;hinge-out-from-left&quot;, &quot;hinge-out-from-middle-x&quot;, &quot;hinge-out-from-middle-y&quot;, &quot;scale-out-up&quot;, &quot;scale-out-down&quot;, &quot;spin-out&quot;, &quot;spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SRC" expression="&quot;Path images?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb Elements?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-mdtp" value="&lt;span data-tooltip aria-haspopup=&quot;true&quot; class=&quot;has-tip$OPT$&quot; data-disable-hover='false' tabindex=$NB$ title=&quot;$TT$&quot;&gt;$CUT$&lt;/span&gt;&#10;" description="Tooltips Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPT" expression="enum(&quot;&quot;, &quot; top&quot;, &quot; right&quot;, &quot; left&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="enum(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="TT" expression="&quot;Tooltip Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="CUT" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-plab" value="&lt;form data-abide novalidate&gt;&#10;  &lt;div data-abide-error class=&quot;alert callout&quot; style=&quot;display: none;&quot;&gt;&#10;    &lt;p&gt;&lt;i class=&quot;fi-alert&quot;&gt;&lt;/i&gt; There are some errors in your form.&lt;/p&gt;&#10;  &lt;/div&gt;&#10;  $LAST$&#10;&lt;/form&gt;" description="Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="LAST" expression="&quot;&lt;!-- Content --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-number" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;input type=&quot;text&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required pattern=&quot;number&quot;&gt;&#10;      &lt;span class=&quot;form-error&quot;&gt;$ERTXT$&lt;/span&gt;&#10;      &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;$TXTHELP$&lt;/p&gt;&#10;    &lt;/label&gt;     &#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Number Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ERTXT" expression="&quot;Error Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TXTHELP" expression="&quot;Help Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-password-match" value="&lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;  &lt;label&gt;Password Required&#10;    &lt;input type=&quot;password&quot; id=&quot;password&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required &gt;&#10;    &lt;span class=&quot;form-error&quot;&gt;I'm required!&lt;/span&gt;&#10;  &lt;/label&gt;&#10;  &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;Enter a password please.&lt;/p&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;  &lt;label&gt;Re-enter Password&#10;    &lt;input type=&quot;password&quot; placeholder=&quot;$VPLHR$&quot; aria-describedby=&quot;$ARIA1$&quot; required pattern=&quot;alpha_numeric&quot; data-equalto=&quot;password&quot;&gt;&#10;    &lt;span class=&quot;form-error&quot;&gt;Hey, passwords are supposed to match!&lt;/span&gt;&#10;  &lt;/label&gt;&#10;  &lt;p class=&quot;help-text&quot; id=&quot;$ARIA1$&quot;&gt;&lt;/p&gt;&#10;&lt;/div&gt;" description="Password Matching Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VPLHR" expression="&quot;Verif Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARIA1" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ADDabide" value="$CONTAINER$$LAST$" description="Abide Components Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="CONTAINER" expression="enum(&quot;abd-number&quot;, &quot;abd-text&quot;, &quot;abd-password-match&quot;, &quot;abd-url&quot;, &quot;abd-email&quot;, &quot;abd-select&quot;, &quot;abd-radio&quot;, &quot;abd-checkbox&quot;, &quot;abd-custom&quot;, &quot;abd-button&quot; )" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-text" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;input type=&quot;text&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required pattern=&quot;alpha&quot;&gt;&#10;      &lt;span class=&quot;form-error&quot;&gt;$ERTXT$&lt;/span&gt;&#10;      &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;$TXTHELP$&lt;/p&gt;&#10;    &lt;/label&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Text Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ERTXT" expression="&quot;Error Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TXTHELP" expression="&quot;Help Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-url" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;input type=&quot;text&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required pattern=&quot;url&quot;&gt;&#10;      &lt;span class=&quot;form-error&quot;&gt;$ERTXT$&lt;/span&gt;&#10;      &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;$TXTHELP$&lt;/p&gt;&#10;    &lt;/label&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Url Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ERTXT" expression="&quot;Error Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TXTHELP" expression="&quot;Help Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-email" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;input type=&quot;text&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required pattern=&quot;email&quot;&gt;&#10;      &lt;span class=&quot;form-error&quot;&gt;$ERTXT$&lt;/span&gt;&#10;      &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;$TXTHELP$&lt;/p&gt;&#10;    &lt;/label&gt;        &#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Email Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ERTXT" expression="&quot;Error Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TXTHELP" expression="&quot;Help Text?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-select" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NBC$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;select id=&quot;select&quot; required&gt;&#10;        option*$NB$$LAST$&#10;      &lt;/select&gt;&#10;    &lt;/label&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;  " description="Select Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBC" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb Options?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-custom" value="&lt;input id=&quot;$ID1$&quot; type=&quot;$TYP1$$FREE$&quot; placeholder=&quot;$PL$&quot; pattern=&quot;$PATT$&quot; required &gt;&#10;&#10;&#10;$(document).foundation();&#10;Foundation.Abide.defaults.patterns['$PATT$'] = /$REGEX$/;$HELP$&#10;" description="Custom Pattern Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ID1" expression="&quot;Id?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYP1" expression="enum(&quot;&quot;, &quot;text&quot;, &quot;date&quot;, &quot;datetime&quot;, &quot;datetime-local&quot;, &quot;email&quot;, &quot;month&quot;, &quot;number&quot;, &quot;password&quot;, &quot;search&quot;, &quot;tel&quot;, &quot;time&quot;, &quot;url&quot;, &quot;week&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FREE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PL" expression="&quot;PlaceHolder?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REGEX" expression="&quot;regex custom?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="HELP" expression="&quot;&lt;!-- http://regexlib.com/Search.aspx --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-button" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;fieldset class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;button class=&quot;button$TYP$&quot; type=&quot;$TYPE$&quot;&gt;$TEXT$&lt;/button&gt;&#10;  &lt;/fieldset&gt;&#10;&lt;/div&gt;" description="Button Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYP" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;, &quot; expanded&quot;, &quot; small expanded&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;submit\&quot; value=\&quot;Submit&quot;, &quot;reset\&quot; value=\&quot;Reset&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="&quot;Text_Button?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-radio" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;fieldset class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;legend&gt;$LEG$&lt;/legend&gt;&#10;    &lt;input type=&quot;radio&quot; name=&quot;$NAM$&quot; value=&quot;$VAlUE1$&quot; id=&quot;$NAM$$VAlUE1$&quot;&gt;&lt;label for=&quot;$NAM$$VAlUE1$&quot;&gt;$VAlUE1$&lt;/label&gt;&#10;    &lt;input type=&quot;radio&quot; name=&quot;$NAM$&quot; value=&quot;$VAlUE2$&quot; id=&quot;$NAM$$VAlUE2$&quot;&gt;&lt;label for=&quot;$NAM$$VAlUE2$&quot;&gt;$VAlUE2$&lt;/label&gt;&#10;    &lt;input type=&quot;radio&quot; name=&quot;$NAM$&quot; value=&quot;$VAlUE3$&quot; id=&quot;$NAM$$VAlUE3$&quot;&gt;&lt;label for=&quot;$NAM$$VAlUE1$&quot;&gt;$VAlUE3$&lt;/label&gt;&#10;    &lt;!--input[type=radio name= value= id=]&gt;label[for=]--&gt;&#10;  &lt;/fieldset&gt;&#10;&lt;/di&gt;" description="Radio Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LEG" expression="&quot;Legend?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAM" expression="&quot;Name-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAlUE1" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAlUE2" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAlUE3" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="abd-checkbox" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;fieldset class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;legend&gt;$LEG$&lt;/legend&gt;&#10;    &lt;input id=&quot;checkbox1&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox1&quot;&gt;$LABL1$&lt;/label&gt;&#10;    &lt;input id=&quot;checkbox2&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox2&quot;&gt;$LABL2$&lt;/label&gt;&#10;    &lt;input id=&quot;checkbox3&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox3&quot;&gt;$LABL3$&lt;/label&gt;&#10;    &lt;!--input[id= type=checkbox]&gt;label[for=]--&gt;&#10;  &lt;/fieldset&gt;&#10;&lt;/di&gt;" description="Checkbox Abide Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LEG" expression="&quot;Legend?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABL1" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABL2" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABL3" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-pleq" value="&lt;div class=&quot;row&quot; $DTEQ$ data-equalize-on=&quot;$SIZ$&quot; id=&quot;$ID$&quot;&gt;&#10;    {&lt;\div class=\&quot;small-$NBS$ medium-$NBM$ large-$NBL$ columns\&quot;&gt;&lt;\div class=\&quot;callout\&quot; data-equalizer-watch &gt;&lt;!--content--&gt;&lt;\/div&gt;&lt;\/div&gt;}*$NBR$$LAST$&#10;&lt;/div&gt;  " description="Equalizer Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="DTEQ" expression="&quot;data-equalizer&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="ID" expression="&quot;Id?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBS" expression="&quot;Col for Small?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBM" expression="&quot;Col for Medium?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBL" expression="&quot;Nb for Large?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBR" expression="&quot;Nb Item Equalized?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-pleqr" value="&lt;div class=&quot;row&quot; $DTEQ$ data-equalize-by-row=&quot;true&quot;&gt;&#10;    {&lt;\div class=\&quot;small-$NBS$ medium-$NBM$ large-$NBL$ columns\&quot;&gt;&lt;\div class=\&quot;callout clearfix\&quot;&gt;&lt;\div data-equalizer-watch&gt;&lt;!--content--&gt;&lt;\/div&gt;&lt;\/div&gt;&lt;\/div&gt;}*$NBR$$LAST$&#10;&lt;/div&gt;" description="Equalizer Responsive Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="DTEQ" expression="&quot;data-equalizer&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="NBS" expression="&quot;Col for Small?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBM" expression="&quot;Col for Medium?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBL" expression="&quot;Nb for Large?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBR" expression="&quot;Nb Item Equalized?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-plit-img" value="{&lt;\img data-interchange=\&quot;[$LINK$/$NAME$-small.jpg, small\],\ [$LINK$/$NAME$-medium.jpg, medium\],\ [$LINK$/$NAME$-large.jpg, large\]\&quot;&gt;}*1" description="Interchange Image Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="LINK" expression="&quot;Image/Path?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="&quot;Image/Name?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-plit-html" value="{&lt;\div data-interchange=\&quot;[$LINK$/$NAME$-default.html, small\],\ [$LINK$/$NAME$-medium.html, medium\],\ [$LINK$/$NAME$-large.html, large\]\&quot;&gt;&lt;\/div&gt;}*1" description="Interchange Html Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="LINK" expression="&quot;Html/Path?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="&quot;Html/Name?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-plit-div" value="{&lt;\div data-interchange=\&quot;[$LINK$/$NAME$-small.jpg, small\],\ [$LINK$/$NAME$-medium.jpg, medium\],\ [$LINK$/$NAME$-large.jpg, large\]\&quot;&gt;&lt;\/div&gt;}*1" description="Interchange Div Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="LINK" expression="&quot;Image/Path?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="&quot;Image/Name?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-pltga" value="&lt;p&gt;&lt;a data-toggle=&quot;$ID$&quot;&gt;$TRIG$&lt;/a&gt;&lt;/p&gt;     &#10;&lt;div class=&quot;callout&quot; id=&quot;$ID$&quot; $DTTG$ data-animate=&quot;$IN$$OUT$&quot;&gt;&#10;$LAST$&#10;&lt;/div&gt;" description="Toggler Animate Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ID" expression="&quot;Id?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TRIG" expression="&quot;Toggle_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="DTTG" expression="&quot;data-toggler&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="IN" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+    <variable name="OUT" expression="enum(&quot; slide-out-down&quot;, &quot; slide-out-right&quot;, &quot; slide-out-up&quot;, &quot; slide-out-left&quot;, &quot; fade-out&quot;, &quot; hinge-out-from-top&quot;, &quot; hinge-out-from-right&quot;, &quot; hinge-out-from-bottom&quot;, &quot; hinge-out-from-left&quot;, &quot; hinge-out-from-middle-x&quot;, &quot; hinge-out-from-middle-y&quot;, &quot; scale-out-up&quot;, &quot; scale-out-down&quot;, &quot; spin-out&quot;, &quot; spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="&quot;&lt;!--content--&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-pltgc" value="&lt;div class=&quot;callout&quot; data-closable=&quot;$OUT$&quot;&gt;&#10;  &lt;button class=&quot;close-button&quot; data-close&gt;&amp;times;&lt;/button&gt;&#10;  $LAST$&#10;&lt;/div&gt;" description="Toggler Closable Animate Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OUT" expression="enum(&quot;slide-out-down&quot;, &quot;slide-out-right&quot;, &quot;slide-out-up&quot;, &quot;slide-out-left&quot;, &quot;fade-out&quot;, &quot;hinge-out-from-top&quot;, &quot;hinge-out-from-right&quot;, &quot;hinge-out-from-bottom&quot;, &quot;hinge-out-from-left&quot;, &quot;hinge-out-from-middle-x&quot;, &quot;hinge-out-from-middle-y&quot;, &quot;scale-out-up&quot;, &quot;scale-out-down&quot;, &quot;spin-out&quot;, &quot;spin-out-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="&quot;&lt;!--Content--&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-plst" value="&lt;div class=&quot;$SIZ1$-$NB1$ columns&quot; id=&quot;$ANCH$&quot;&gt;&#10;  $CT$&#10;&lt;/div&gt;&#10;&lt;div class=&quot;$SIZ$-$NB$ columns&quot; data-sticky-container&gt;&#10;  &lt;div class=&quot;sticky&quot; $DTSK$ data-anchor=&quot;$ANCH$&quot;&gt;&#10;    $LAST$&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Sticky Anchor Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ1" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB1" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ANCH" expression="&quot;Id Anchor?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="DTSK" expression="&quot;data-sticky&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="LAST" expression="&quot;&lt;!--sticky content--&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="CT" expression="&quot;&lt;!--content--&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="imgpl" value="&lt;img src=&quot;http://www.lorempixel.com/$WIDTH$/$HEIGHT$/$CAT$&quot; alt=&quot;$CAT$&quot; /&gt;$END$" description="Image Placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="&quot;Height-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT" expression="enum(&quot;abstract&quot;, &quot;animals&quot;, &quot;business&quot;, &quot;cats&quot;, &quot;city&quot;, &quot;food&quot;, &quot;nightlife&quot;, &quot;fashion&quot;, &quot;people&quot;, &quot;nature&quot;, &quot;sports&quot;, &quot;technics&quot;, &quot;transport&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="imgpk" value="&lt;img src='http://placekitten.com/g/$WIDTH$/$HEIGHT$' /&gt;$END$&#10;" description="image placeholder  PLACEKITTEN" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="&quot;Height-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="imgpi" value="&lt;img src=&quot;http://placehold.it/$WIDTH$x$HEIGHT$&amp;text=$TEXT$&quot; alt=&quot;&quot;/&gt;$END$&#10;" description="Image placeholder PLACEHOLD.IT" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="&quot;Height-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="imgpg" value="img[src=http://www.lorempixel.com/$WIDTH$/$EIGHT$/$CAT$/$/ alt=$CAT$$]*10$EMMET$$END$&#10;" description="gallery placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="EIGHT" expression="&quot;Height-?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT" expression="enum(&quot;abstract&quot;, &quot;animals&quot;, &quot;business&quot;, &quot;cats&quot;, &quot;city&quot;, &quot;food&quot;, &quot;nightlife&quot;, &quot;fashion&quot;, &quot;people&quot;, &quot;nature&quot;, &quot;sports&quot;, &quot;technics&quot;, &quot;transport&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="EMMET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="icon-font" value="&lt;i class=&quot;fi-$ICON$&quot;&gt;&lt;/i&gt;" description="283 Icon Font Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ICON" expression="enum(&quot;address-book&quot;, &quot;alert&quot;, &quot;align-center&quot;, &quot;align-justify&quot;, &quot;align-left&quot;, &quot;align-right&quot;, &quot;anchor&quot;, &quot;annotate&quot;, &quot;archive&quot;, &quot;arrow-down&quot;, &quot;arrow-left&quot;, &quot;arrow-right&quot;, &quot;arrow-up&quot;, &quot;arrows-compress&quot;, &quot;arrows-expand&quot;, &quot;arrows-in&quot;, &quot;arrows-out&quot;, &quot;asl&quot;, &quot;asterisk&quot;, &quot;at-sign&quot;, &quot;background-color&quot;, &quot;battery-empty&quot;, &quot;battery-full&quot;, &quot;battery-half&quot;, &quot;bitcoin-circle&quot;, &quot;bitcoin&quot;, &quot;blind&quot;, &quot;bluetooth&quot;, &quot;bold&quot;, &quot;book-bookmark&quot;, &quot;book&quot;, &quot;bookmark&quot;, &quot;braille&quot;, &quot;burst-new&quot;, &quot;burst-sale&quot;, &quot;burst&quot;, &quot;calendar&quot;, &quot;camera&quot;, &quot;check&quot;, &quot;checkbox&quot;, &quot;clipboard-notes&quot;, &quot;clipboard-pencil&quot;, &quot;clipboard&quot;, &quot;clock&quot;, &quot;closed-caption&quot;, &quot;cloud&quot;, &quot;comment-minus&quot;, &quot;comment-quotes&quot;, &quot;comment-video&quot;, &quot;comment&quot;, &quot;comments&quot;, &quot;compass&quot;, &quot;contrast&quot;, &quot;credit-card&quot;, &quot;crop&quot;, &quot;crown&quot;, &quot;css3&quot;, &quot;database&quot;, &quot;die-five&quot;, &quot;die-four&quot;, &quot;die-one&quot;, &quot;die-six&quot;, &quot;die-three&quot;, &quot;die-two&quot;, &quot;dislike&quot;, &quot;dollar-bill&quot;, &quot;dollar&quot;, &quot;download&quot;, &quot;eject&quot;, &quot;elevator&quot;, &quot;euro&quot;, &quot;eye&quot;, &quot;fast-forward&quot;, &quot;female-symbol&quot;, &quot;female&quot;, &quot;filter&quot;, &quot;first-aid&quot;, &quot;flag&quot;, &quot;folder-add&quot;, &quot;folder-lock&quot;, &quot;folder&quot;, &quot;foot&quot;, &quot;foundation&quot;, &quot;graph-bar&quot;, &quot;graph-horizontal&quot;, &quot;graph-pie&quot;, &quot;graph-trend&quot;, &quot;guide-dog&quot;, &quot;hearing-aid&quot;, &quot;heart&quot;, &quot;home&quot;, &quot;html5&quot;, &quot;indent-less&quot;, &quot;indent-more&quot;, &quot;info&quot;, &quot;italic&quot;, &quot;key&quot;, &quot;laptop&quot;, &quot;layout&quot;, &quot;lightbulb&quot;, &quot;like&quot;, &quot;link&quot;, &quot;list-bullet&quot;, &quot;list-number&quot;, &quot;list-thumbnails&quot;, &quot;list&quot;, &quot;lock&quot;, &quot;loop&quot;, &quot;magnifying-glass&quot;, &quot;mail&quot;, &quot;male-female&quot;, &quot;male-symbol&quot;, &quot;male&quot;, &quot;map&quot;, &quot;marker&quot;, &quot;megaphone&quot;, &quot;microphone&quot;, &quot;minus-circle&quot;, &quot;minus&quot;, &quot;mobile-signal&quot;, &quot;mobile&quot;, &quot;monitor&quot;, &quot;mountains&quot;, &quot;music&quot;, &quot;next&quot;, &quot;no-dogs&quot;, &quot;no-smoking&quot;, &quot;page-add&quot;, &quot;page-copy&quot;, &quot;page-csv&quot;, &quot;page-delete&quot;, &quot;page-doc&quot;, &quot;page-edit&quot;, &quot;page-export-csv&quot;, &quot;page-export-doc&quot;, &quot;page-export-pdf&quot;, &quot;page-export&quot;, &quot;page-filled&quot;, &quot;page-multiple&quot;, &quot;page-pdf&quot;, &quot;page-remove&quot;, &quot;page-search&quot;, &quot;page&quot;, &quot;paint-bucket&quot;, &quot;paperclip&quot;, &quot;pause&quot;, &quot;paw&quot;, &quot;paypal&quot;, &quot;pencil&quot;, &quot;photo&quot;, &quot;play-circle&quot;, &quot;play-video&quot;, &quot;play&quot;, &quot;plus&quot;, &quot;pound&quot;, &quot;power&quot;, &quot;previous&quot;, &quot;price-tag&quot;, &quot;pricetag-multiple&quot;, &quot;print&quot;, &quot;prohibited&quot;, &quot;projection-screen&quot;, &quot;puzzle&quot;, &quot;quote&quot;, &quot;record&quot;, &quot;refresh&quot;, &quot;results-demographics&quot;, &quot;results&quot;, &quot;rewind-ten&quot;, &quot;rewind&quot;, &quot;rss&quot;, &quot;safety-cone&quot;, &quot;save&quot;, &quot;share&quot;, &quot;sheriff-badge&quot;, &quot;shield&quot;, &quot;shopping-bag&quot;, &quot;shopping-cart&quot;, &quot;shuffle&quot;, &quot;skull&quot;, &quot;social-500px&quot;, &quot;social-adobe&quot;, &quot;social-amazon&quot;, &quot;social-android&quot;, &quot;social-apple&quot;, &quot;social-behance&quot;, &quot;social-bing&quot;, &quot;social-blogger&quot;, &quot;social-delicious&quot;, &quot;social-designer-news&quot;, &quot;social-deviant-art&quot;, &quot;social-digg&quot;, &quot;social-dribbble&quot;, &quot;social-drive&quot;, &quot;social-dropbox&quot;, &quot;social-evernote&quot;, &quot;social-facebook&quot;, &quot;social-flickr&quot;, &quot;social-forrst&quot;, &quot;social-foursquare&quot;, &quot;social-game-center&quot;, &quot;social-github&quot;, &quot;social-google-plus&quot;, &quot;social-hacker-news&quot;, &quot;social-hi5&quot;, &quot;social-instagram&quot;, &quot;social-joomla&quot;, &quot;social-lastfm&quot;, &quot;social-linkedin&quot;, &quot;social-medium&quot;, &quot;social-myspace&quot;, &quot;social-orkut&quot;, &quot;social-path&quot;, &quot;social-picasa&quot;, &quot;social-pinterest&quot;, &quot;social-rdio&quot;, &quot;social-reddit&quot;, &quot;social-skillshare&quot;, &quot;social-skype&quot;, &quot;social-smashing-mag&quot;, &quot;social-snapchat&quot;, &quot;social-spotify&quot;, &quot;social-squidoo&quot;, &quot;social-stack-overflow&quot;, &quot;social-steam&quot;, &quot;social-stumbleupon&quot;, &quot;social-treehouse&quot;, &quot;social-tumblr&quot;, &quot;social-twitter&quot;, &quot;social-vimeo&quot;, &quot;social-windows&quot;, &quot;social-xbox&quot;, &quot;social-yahoo&quot;, &quot;social-yelp&quot;, &quot;social-youtube&quot;, &quot;social-zerply&quot;, &quot;social-zurb&quot;, &quot;sound&quot;, &quot;star&quot;, &quot;stop&quot;, &quot;strikethrough&quot;, &quot;subscript&quot;, &quot;superscript&quot;, &quot;tablet-landscape&quot;, &quot;tablet-portrait&quot;, &quot;target-two&quot;, &quot;target&quot;, &quot;telephone-accessible&quot;, &quot;telephone&quot;, &quot;text-color&quot;, &quot;thumbnails&quot;, &quot;ticket&quot;, &quot;torso-business&quot;, &quot;torso-female&quot;, &quot;torso&quot;, &quot;torsos-all-female&quot;, &quot;torsos-all&quot;, &quot;torsos-female-male&quot;, &quot;torsos-male-female&quot;, &quot;torsos&quot;, &quot;trash&quot;, &quot;trees&quot;, &quot;trophy&quot;, &quot;underline&quot;, &quot;universal-access&quot;, &quot;unlink&quot;, &quot;unlock&quot;, &quot;upload-cloud&quot;, &quot;upload&quot;, &quot;usb&quot;, &quot;video&quot;, &quot;volume-none&quot;, &quot;volume-strike&quot;, &quot;volume&quot;, &quot;web&quot;, &quot;wheelchair&quot;&quot;, &quot;widget&quot;, &quot;wrench&quot;, &quot;x-circle&quot;, &quot;x&quot;, &quot;yen&quot;, &quot;zoom-in&quot;, &quot;zoom-out&quot;) " defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="css-data-icon" value="[data-icon]:before {&#10;  font-family: foundation-icons;&#10;  content: attr(data-icon);&#10;  speak: none;&#10;}&#10;.size-12 { font-size: 0.7500em; }&#10;.size-14 { font-size: 0.8750em; }&#10;.size-16 { font-size: 1.0000em; } /* Default font size! */&#10;.size-18 { font-size: 1.1250em; }&#10;.size-21 { font-size: 1.3125em; }&#10;.size-24 { font-size: 1.5000em; }&#10;.size-36 { font-size: 2.2500em; }&#10;.size-48 { font-size: 3.0000em; }&#10;.size-60 { font-size: 3.7500em; }&#10;.size-72 { font-size: 4.5000em; }" description="CSS data Icon Font Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="data-icon" value="&lt;span aria-hidden=&quot;true&quot; data-icon=&quot;$DATAICON$$LAST$&lt;/span&gt;" description="283 Data Icon Font Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="DATAICON" expression="enum(&quot;&amp;#xf100;\&quot;&gt; address-book&quot;, &quot;&amp;#xf101;\&quot;&gt; alert&quot;, &quot;&amp;#xf102;\&quot;&gt; align-center&quot;, &quot;&amp;#xf103;\&quot;&gt; align-justify&quot;, &quot;&amp;#xf104;\&quot;&gt; align-left&quot;, &quot;&amp;#xf105;\&quot;&gt; align-right&quot;, &quot;&amp;#xf106;\&quot;&gt; anchor&quot;, &quot;&amp;#xf107;\&quot;&gt; annotate&quot;, &quot;&amp;#xf108;\&quot;&gt; archive&quot;, &quot;&amp;#xf109;\&quot;&gt; arrow-down&quot;, &quot;&amp;#xf10a;\&quot;&gt; arrow-left&quot;, &quot;&amp;#xf10b;\&quot;&gt; arrow-right&quot;, &quot;&amp;#xf10c;\&quot;&gt; arrow-up&quot;, &quot;&amp;#xf10d;\&quot;&gt; arrows-compress&quot;, &quot;&amp;#xf10e;\&quot;&gt; arrows-expand&quot;, &quot;&amp;#xf10f;\&quot;&gt; arrows-in&quot;, &quot;&amp;#xf110;\&quot;&gt; arrows-out&quot;, &quot;&amp;#xf111;\&quot;&gt; asl&quot;, &quot;&amp;#xf112;\&quot;&gt; asterisk&quot;, &quot;&amp;#xf113;\&quot;&gt; at-sign&quot;, &quot;&amp;#xf114;\&quot;&gt; background-color&quot;, &quot;&amp;#xf115;\&quot;&gt; battery-empty&quot;, &quot;&amp;#xf116;\&quot;&gt; battery-full&quot;, &quot;&amp;#xf117;\&quot;&gt; battery-half&quot;, &quot;&amp;#xf118;\&quot;&gt; bitcoin-circle&quot;, &quot;&amp;#xf119;\&quot;&gt; bitcoin&quot;, &quot;&amp;#xf11a;\&quot;&gt; blind&quot;, &quot;&amp;#xf11b;\&quot;&gt; bluetooth&quot;, &quot;&amp;#xf11c;\&quot;&gt; bold&quot;, &quot;&amp;#xf11d;\&quot;&gt; book-bookmark&quot;, &quot;&amp;#xf11e;\&quot;&gt; book&quot;, &quot;&amp;#xf11f;\&quot;&gt; bookmark&quot;, &quot;&amp;#xf120;\&quot;&gt; braille&quot;, &quot;&amp;#xf121;\&quot;&gt; burst-new&quot;, &quot;&amp;#xf122;\&quot;&gt; burst-sale&quot;, &quot;&amp;#xf123;\&quot;&gt; burst&quot;, &quot;&amp;#xf124;\&quot;&gt; calendar&quot;, &quot;&amp;#xf125;\&quot;&gt; camera&quot;, &quot;&amp;#xf126;\&quot;&gt; check&quot;, &quot;&amp;#xf127;\&quot;&gt; checkbox&quot;, &quot;&amp;#xf128;\&quot;&gt; clipboard-notes&quot;, &quot;&amp;#xf129;\&quot;&gt; clipboard-pencil&quot;, &quot;&amp;#xf12a;\&quot;&gt; clipboard&quot;, &quot;&amp;#xf12b;\&quot;&gt; clock&quot;, &quot;&amp;#xf12c;\&quot;&gt; closed-caption&quot;, &quot;&amp;#xf12d;\&quot;&gt; cloud&quot;, &quot;&amp;#xf12e;\&quot;&gt; comment-minus&quot;, &quot;&amp;#xf12f;\&quot;&gt; comment-quotes&quot;, &quot;&amp;#xf130;\&quot;&gt; comment-video&quot;, &quot;&amp;#xf131;\&quot;&gt; comment&quot;, &quot;&amp;#xf132;\&quot;&gt; comments&quot;, &quot;&amp;#xf133;\&quot;&gt; compass&quot;, &quot;&amp;#xf134;\&quot;&gt; contrast&quot;, &quot;&amp;#xf135;\&quot;&gt; credit-card&quot;, &quot;&amp;#xf136;\&quot;&gt; crop&quot;, &quot;&amp;#xf137;\&quot;&gt; crown&quot;, &quot;&amp;#xf138;\&quot;&gt; css3&quot;, &quot;&amp;#xf139;\&quot;&gt; database&quot;, &quot;&amp;#xf13a;\&quot;&gt; die-five&quot;, &quot;&amp;#xf13b;\&quot;&gt; die-four&quot;, &quot;&amp;#xf13c;\&quot;&gt; die-one&quot;, &quot;&amp;#xf13d;\&quot;&gt; die-six&quot;, &quot;&amp;#xf13e;\&quot;&gt; die-three&quot;, &quot;&amp;#xf13f;\&quot;&gt; die-two&quot;, &quot;&amp;#xf140;\&quot;&gt; dislike&quot;, &quot;&amp;#xf141;\&quot;&gt; dollar-bill&quot;, &quot;&amp;#xf142;\&quot;&gt; dollar&quot;, &quot;&amp;#xf143;\&quot;&gt; download&quot;, &quot;&amp;#xf144;\&quot;&gt; eject&quot;, &quot;&amp;#xf145;\&quot;&gt; elevator&quot;, &quot;&amp;#xf146;\&quot;&gt; euro&quot;, &quot;&amp;#xf147;\&quot;&gt; eye&quot;, &quot;&amp;#xf148;\&quot;&gt; fast-forward&quot;, &quot;&amp;#xf149;\&quot;&gt; female-symbol&quot;, &quot;&amp;#xf14a;\&quot;&gt; female&quot;, &quot;&amp;#xf14b;\&quot;&gt; filter&quot;, &quot;&amp;#xf14c;\&quot;&gt; first-aid&quot;, &quot;&amp;#xf14d;\&quot;&gt; flag&quot;, &quot;&amp;#xf14e;\&quot;&gt; folder-add&quot;, &quot;&amp;#xf14f;\&quot;&gt; folder-lock&quot;, &quot;&amp;#xf150;\&quot;&gt; folder&quot;, &quot;&amp;#xf151;\&quot;&gt; foot&quot;, &quot;&amp;#xf152;\&quot;&gt; foundation&quot;, &quot;&amp;#xf153;\&quot;&gt; graph-bar&quot;, &quot;&amp;#xf154;\&quot;&gt; graph-horizontal&quot;, &quot;&amp;#xf155;\&quot;&gt; graph-pie&quot;, &quot;&amp;#xf156;\&quot;&gt; graph-trend&quot;, &quot;&amp;#xf157;\&quot;&gt; guide-dog&quot;, &quot;&amp;#xf158;\&quot;&gt; hearing-aid&quot;, &quot;&amp;#xf159;\&quot;&gt; heart&quot;, &quot;&amp;#xf15a;\&quot;&gt; home&quot;, &quot;&amp;#xf15b;\&quot;&gt; html5&quot;, &quot;&amp;#xf15c;\&quot;&gt; indent-less&quot;, &quot;&amp;#xf15d;\&quot;&gt; indent-more&quot;, &quot;&amp;#xf15e;\&quot;&gt; info&quot;, &quot;&amp;#xf15f;\&quot;&gt; italic&quot;, &quot;&amp;#xf160;\&quot;&gt; key&quot;, &quot;&amp;#xf161;\&quot;&gt; laptop&quot;, &quot;&amp;#xf162;\&quot;&gt; layout&quot;, &quot;&amp;#xf163;\&quot;&gt; lightbulb&quot;, &quot;&amp;#xf164;\&quot;&gt; like&quot;, &quot;&amp;#xf165;\&quot;&gt; link&quot;, &quot;&amp;#xf166;\&quot;&gt; list-bullet&quot;, &quot;&amp;#xf167;\&quot;&gt; list-number&quot;, &quot;&amp;#xf168;\&quot;&gt; list-thumbnails&quot;, &quot;&amp;#xf169;\&quot;&gt; list&quot;, &quot;&amp;#xf16a;\&quot;&gt; lock&quot;, &quot;&amp;#xf16b;\&quot;&gt; loop&quot;, &quot;&amp;#xf16c;\&quot;&gt; magnifying-glass&quot;, &quot;&amp;#xf16d;\&quot;&gt; mail&quot;, &quot;&amp;#xf16e;\&quot;&gt; male-female&quot;, &quot;&amp;#xf16f;\&quot;&gt; male-symbol&quot;, &quot;&amp;#xf170;\&quot;&gt; male&quot;, &quot;&amp;#xf171;\&quot;&gt; map&quot;, &quot;&amp;#xf172;\&quot;&gt; marker&quot;, &quot;&amp;#xf173;\&quot;&gt; megaphone&quot;, &quot;&amp;#xf174;\&quot;&gt; microphone&quot;, &quot;&amp;#xf175;\&quot;&gt; minus-circle&quot;, &quot;&amp;#xf176;\&quot;&gt; minus&quot;, &quot;&amp;#xf177;\&quot;&gt; mobile-signal&quot;, &quot;&amp;#xf178;\&quot;&gt; mobile&quot;, &quot;&amp;#xf179;\&quot;&gt; monitor&quot;, &quot;&amp;#xf17a;\&quot;&gt; mountains&quot;, &quot;&amp;#xf17b;\&quot;&gt; music&quot;, &quot;&amp;#xf17c;\&quot;&gt; next&quot;, &quot;&amp;#xf17d;\&quot;&gt; no-dogs&quot;, &quot;&amp;#xf17e;\&quot;&gt; no-smoking&quot;, &quot;&amp;#xf17f;\&quot;&gt; page-add&quot;, &quot;&amp;#xf180;\&quot;&gt; page-copy&quot;, &quot;&amp;#xf181;\&quot;&gt; page-csv&quot;, &quot;&amp;#xf182;\&quot;&gt; page-delete&quot;, &quot;&amp;#xf183;\&quot;&gt; page-doc&quot;, &quot;&amp;#xf184;\&quot;&gt; page-edit&quot;, &quot;&amp;#xf185;\&quot;&gt; page-export-csv&quot;, &quot;&amp;#xf186;\&quot;&gt; page-export-doc&quot;, &quot;&amp;#xf187;\&quot;&gt; page-export-pdf&quot;, &quot;&amp;#xf188;\&quot;&gt; page-export&quot;, &quot;&amp;#xf189;\&quot;&gt; page-filled&quot;, &quot;&amp;#xf18a;\&quot;&gt; page-multiple&quot;, &quot;&amp;#xf18b;\&quot;&gt; page-pdf&quot;, &quot;&amp;#xf18c;\&quot;&gt; page-remove&quot;, &quot;&amp;#xf18d;\&quot;&gt; page-search&quot;, &quot;&amp;#xf18e;\&quot;&gt; page&quot;, &quot;&amp;#xf18f;\&quot;&gt; paint-bucket&quot;, &quot;&amp;#xf190;\&quot;&gt; paperclip&quot;, &quot;&amp;#xf191;\&quot;&gt; pause&quot;, &quot;&amp;#xf192;\&quot;&gt; paw&quot;, &quot;&amp;#xf193;\&quot;&gt; paypal&quot;, &quot;&amp;#xf194;\&quot;&gt; pencil&quot;, &quot;&amp;#xf195;\&quot;&gt; photo&quot;, &quot;&amp;#xf196;\&quot;&gt; play-circle&quot;, &quot;&amp;#xf197;\&quot;&gt; play-video&quot;, &quot;&amp;#xf198;\&quot;&gt; play&quot;, &quot;&amp;#xf199;\&quot;&gt; plus&quot;, &quot;&amp;#xf19a;\&quot;&gt; pound&quot;, &quot;&amp;#xf19b;\&quot;&gt; power&quot;, &quot;&amp;#xf19c;\&quot;&gt; previous&quot;, &quot;&amp;#xf19d;\&quot;&gt; price-tag&quot;, &quot;&amp;#xf19e;\&quot;&gt; pricetag-multiple&quot;, &quot;&amp;#xf19f;\&quot;&gt; print&quot;, &quot;&amp;#xf1a0;\&quot;&gt; prohibited&quot;, &quot;&amp;#xf1a1;\&quot;&gt; projection-screen&quot;, &quot;&amp;#xf1a2;\&quot;&gt; puzzle&quot;, &quot;&amp;#xf1a3;\&quot;&gt; quote&quot;, &quot;&amp;#xf1a4;\&quot;&gt; record&quot;, &quot;&amp;#xf1a5;\&quot;&gt; refresh&quot;, &quot;&amp;#xf1a6;\&quot;&gt; results-demographics&quot;, &quot;&amp;#xf1a7;\&quot;&gt; results&quot;, &quot;&amp;#xf1a8;\&quot;&gt; rewind-ten&quot;, &quot;&amp;#xf1a9;\&quot;&gt; rewind&quot;, &quot;&amp;#xf1aa;\&quot;&gt; rss&quot;, &quot;&amp;#xf1ab;\&quot;&gt; safety-cone&quot;, &quot;&amp;#xf1ac;\&quot;&gt; save&quot;, &quot;&amp;#xf1ad;\&quot;&gt; share&quot;, &quot;&amp;#xf1ae;\&quot;&gt; sheriff-badge&quot;, &quot;&amp;#xf1af;\&quot;&gt; shield&quot;, &quot;&amp;#xf1b0;\&quot;&gt; shopping-bag&quot;, &quot;&amp;#xf1b1;\&quot;&gt; shopping-cart&quot;, &quot;&amp;#xf1b2;\&quot;&gt; shuffle&quot;, &quot;&amp;#xf1b3;\&quot;&gt; skull&quot;, &quot;&amp;#xf1b4;\&quot;&gt; social-500px&quot;, &quot;&amp;#xf1b5;\&quot;&gt; social-adobe&quot;, &quot;&amp;#xf1b6;\&quot;&gt; social-amazon&quot;, &quot;&amp;#xf1b7;\&quot;&gt; social-android&quot;, &quot;&amp;#xf1b8;\&quot;&gt; social-apple&quot;, &quot;&amp;#xf1b9;\&quot;&gt; social-behance&quot;, &quot;&amp;#xf1ba;\&quot;&gt; social-bing&quot;, &quot;&amp;#xf1bb;\&quot;&gt; social-blogger&quot;, &quot;&amp;#xf1bc;\&quot;&gt; social-delicious&quot;, &quot;&amp;#xf1bd;\&quot;&gt; social-designer-news&quot;, &quot;&amp;#xf1be;\&quot;&gt; social-deviant-art&quot;, &quot;&amp;#xf1bf;\&quot;&gt; social-digg&quot;, &quot;&amp;#xf1c0;\&quot;&gt; social-dribbble&quot;, &quot;&amp;#xf1c1;\&quot;&gt; social-drive&quot;, &quot;&amp;#xf1c2;\&quot;&gt; social-dropbox&quot;, &quot;&amp;#xf1c3;\&quot;&gt; social-evernote&quot;, &quot;&amp;#xf1c4;\&quot;&gt; social-facebook&quot;, &quot;&amp;#xf1c4;\&quot;&gt; social-flickr&quot;, &quot;&amp;#xf1c6;\&quot;&gt; social-forrst&quot;, &quot;&amp;#xf1c7;\&quot;&gt; social-foursquare&quot;, &quot;&amp;#xf1c8;\&quot;&gt; social-game-center&quot;, &quot;&amp;#xf1c9;\&quot;&gt; social-github&quot;, &quot;&amp;#xf1ca;\&quot;&gt; social-google-plus&quot;, &quot;&amp;#xf1cb;\&quot;&gt; social-hacker-news&quot;, &quot;&amp;#xf1cc;\&quot;&gt; social-hi5&quot;, &quot;&amp;#xf1cd;\&quot;&gt; social-instagram&quot;, &quot;&amp;#xf1ce;\&quot;&gt; social-joomla&quot;, &quot;&amp;#xf1cf;\&quot;&gt; social-lastfm&quot;, &quot;&amp;#xf1d0;\&quot;&gt; social-linkedin&quot;, &quot;&amp;#xf1d1;\&quot;&gt; social-medium&quot;, &quot;&amp;#xf1d2;\&quot;&gt; social-myspace&quot;, &quot;&amp;#xf1d3;\&quot;&gt; social-orkut&quot;, &quot;&amp;#xf1d4;\&quot;&gt; social-path&quot;, &quot;&amp;#xf1d5;\&quot;&gt; social-picasa&quot;, &quot;&amp;#xf1d6;\&quot;&gt; social-pinterest&quot;, &quot;&amp;#xf1d7;\&quot;&gt; social-rdio&quot;, &quot;&amp;#xf1d8;\&quot;&gt; social-reddit&quot;, &quot;&amp;#xf1d9;\&quot;&gt; social-skillshare&quot;, &quot;&amp;#xf1da;\&quot;&gt; social-skype&quot;, &quot;&amp;#xf1db;\&quot;&gt; social-smashing-mag&quot;, &quot;&amp;#xf1dc;\&quot;&gt; social-snapchat&quot;, &quot;&amp;#xf1dd;\&quot;&gt; social-spotify&quot;, &quot;&amp;#xf1de;\&quot;&gt; social-squidoo&quot;, &quot;&amp;#xf1df;\&quot;&gt; social-stack-overflow&quot;, &quot;&amp;#xf1e0;\&quot;&gt; social-steam&quot;, &quot;&amp;#xf1e1;\&quot;&gt; social-stumbleupon&quot;, &quot;&amp;#xf1e2;\&quot;&gt; social-treehouse&quot;, &quot;&amp;#xf1e3;\&quot;&gt; social-tumblr&quot;, &quot;&amp;#xf1e4;\&quot;&gt; social-twitter&quot;, &quot;&amp;#xf1e5;\&quot;&gt; social-vimeo&quot;, &quot;&amp;#xf1e6;\&quot;&gt; social-windows&quot;, &quot;&amp;#xf1e7;\&quot;&gt; social-xbox&quot;, &quot;&amp;#xf1e8;\&quot;&gt; social-yahoo&quot;, &quot;&amp;#xf1e9;\&quot;&gt; social-yelp&quot;, &quot;&amp;#xf1ea;\&quot;&gt; social-youtube&quot;, &quot;&amp;#xf1eb;\&quot;&gt; social-zerply&quot;, &quot;&amp;#xf1ec;\&quot;&gt; social-zurb&quot;, &quot;&amp;#xf1ed;\&quot;&gt; sound&quot;, &quot;&amp;#xf1ee;\&quot;&gt; star&quot;, &quot;&amp;#xf1ef;\&quot;&gt; stop&quot;, &quot;&amp;#xf1f0;\&quot;&gt; strikethrough&quot;, &quot;&amp;#xf1f1;\&quot;&gt; subscript&quot;, &quot;&amp;#xf1f2;\&quot;&gt; superscript&quot;, &quot;&amp;#xf1f3;\&quot;&gt; tablet-landscape&quot;, &quot;&amp;#xf1f4;\&quot;&gt; tablet-portrait&quot;, &quot;&amp;#xf1f5;\&quot;&gt; target-two&quot;, &quot;&amp;#xf1f6;\&quot;&gt; target&quot;, &quot;&amp;#xf1f7;\&quot;&gt; telephone-accessible&quot;, &quot;&amp;#xf1f8;\&quot;&gt; telephone&quot;, &quot;&amp;#xf1f9;\&quot;&gt; text-color&quot;, &quot;&amp;#xf1fa;\&quot;&gt; thumbnails&quot;, &quot;&amp;#xf1fb;\&quot;&gt; ticket&quot;, &quot;&amp;#xf1fc;\&quot;&gt; torso-business&quot;, &quot;&amp;#xf1fd;\&quot;&gt; torso-female&quot;, &quot;&amp;#xf1fe;\&quot;&gt; torso&quot;, &quot;&amp;#xf1ff;\&quot;&gt; torsos-all-female&quot;, &quot;&amp;#xf200;\&quot;&gt; torsos-all&quot;, &quot;&amp;#xf201;\&quot;&gt; torsos-female-male&quot;, &quot;&amp;#xf202;\&quot;&gt; torsos-male-female&quot;, &quot;&amp;#xf203;\&quot;&gt; torsos&quot;, &quot;&amp;#xf204;\&quot;&gt; trash&quot;, &quot;&amp;#xf205;\&quot;&gt; trees&quot;, &quot;&amp;#xf206;\&quot;&gt; trophy&quot;, &quot;&amp;#xf207;\&quot;&gt; underline&quot;, &quot;&amp;#xf208;\&quot;&gt; universal-access&quot;, &quot;&amp;#xf209;\&quot;&gt; unlink&quot;, &quot;&amp;#xf20a;\&quot;&gt; unlock&quot;, &quot;&amp;#xf20b;\&quot;&gt; upload-cloud&quot;, &quot;&amp;#xf20c;\&quot;&gt; upload&quot;, &quot;&amp;#xf20d;\&quot;&gt; usb&quot;, &quot;&amp;#xf20e;\&quot;&gt; video&quot;, &quot;&amp;#xf20f;\&quot;&gt; volume-none&quot;, &quot;&amp;#xf210;\&quot;&gt; volume-strike&quot;, &quot;&amp;#xf211;\&quot;&gt; volume&quot;, &quot;&amp;#xf212;\&quot;&gt; web&quot;, &quot;&amp;#xf213;\&quot;&gt; wheelchair&quot;, &quot;&amp;#xf214;\&quot;&gt; widget&quot;, &quot;&amp;#xf215;\&quot;&gt; wrench&quot;, &quot;&amp;#xf216;\&quot;&gt; x-circle&quot;, &quot;&amp;#xf217;\&quot;&gt; x&quot;, &quot;&amp;#xf218;\&quot;&gt; yen&quot;, &quot;&amp;#xf219;\&quot;&gt; zoom-in&quot;, &quot;&amp;#xf21a;\&quot;&gt; zoom-out&quot;) " defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="sticky-magellan" value="&lt;div class=&quot;row&quot;&gt;&#10;    &lt;div class=&quot;$SIZ$-$NB1$ columns&quot; id=&quot;$ANCH$&quot;&gt;&#10;      section[id=$TRG$$ data-magellan-target=$TRG$$]*$NBIT$$LAST$&#10;      &lt;div class=&quot;empty-block&quot;&gt;&lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;$SIZ$-$NB2$ columns&quot; data-sticky-container&gt;&#10;      &lt;div class=&quot;sticky&quot; $DTSK$ data-anchor=&quot;$ANCH$&quot;&gt;&#10;        &lt;aside&gt;&#10;          &lt;ul class=&quot;menu vertical&quot; data-magellan&gt;&#10;            {&lt;\li&gt;&lt;\a href=&quot;#$TRG$$&quot;&gt;&lt;\/a&gt;&lt;\/li&gt;}*$NBIT$&#10;          &lt;/ul&gt;&#10;        &lt;/aside&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;!--&quot;Custom.css&quot; .active { background: #333; color: #FE49FF !important; } .empty-block { width: 100%; height: 4000px; background: transparent; }--&gt;&#10;" description="Sticky Magellan Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB1" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NB2" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ANCH" expression="&quot;Id Anchor?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="DTSK" expression="&quot;data-sticky&quot;" defaultValue="" alwaysStopAt="false" />
+    <variable name="TRG" expression="&quot;Id_Section?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="NBIT" expression="&quot;Nb Elements?&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="zf-bower" value="&lt;!doctype html&gt;&#10;&lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;&#10;&#10;&lt;head&gt;&#10;    &lt;meta charset=&quot;utf-8&quot; /&gt;&#10;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;&#10;    &lt;script src=&quot;bower_components/modernizr/modernizr.js&quot;&gt;&lt;/script&gt;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;bower_components/foundation/css/foundation.css&quot;/&gt;&#10;    &lt;title&gt;&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;    $END$&#10;&#10;&lt;script src=&quot;bower_components/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;bower_components/foundation/js/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;/body&gt;&#10;&#10;&lt;/html&gt;" description="Template html bower_components" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+</templateSet>
