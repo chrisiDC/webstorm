@@ -2,6 +2,8 @@
   <component name="FindSettings">
     <option name="customScope" value="Project 'tarock_node'" />
     <option name="defaultScopeName" value="Project 'tarock_node'" />
+    <option name="localRegularExpressions" value="true" />
+    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="Project 'tarock_node'" />
   </component>
 </application>
