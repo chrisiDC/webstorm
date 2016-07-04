@@ -1,0 +1,21 @@
+<application>
+  <component name="org.jetbrains.tfsIntegration.core.configuration.TFSConfigurationManager">
+    <option name="config">
+      <map>
+        <server uri="https://tfs.docuware.com/tfs/dwcollection1/">
+          <value>
+            <configuration>
+              <credentials>
+                <credentials>
+                  <domain>DOCUNET_AG</domain>
+                  <password>dffedfefdfc7dfdadfeedffddf9bdf98df99</password>
+                  <username>christian.huber</username>
+                </credentials>
+              </credentials>
+            </configuration>
+          </value>
+        </server>
+      </map>
+    </option>
+  </component>
+</application>
