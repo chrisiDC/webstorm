@@ -18,6 +18,10 @@
           <option name="url" value="https://github.com/chrisiDC/meteor.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/chrisiDC/docuware_svg.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\groov\src" />
