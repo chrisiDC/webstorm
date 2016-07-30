@@ -26,8 +26,12 @@
           <option name="url" value="https://github.com/chrisiDC/solutions.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/chrisiDC/koenigrufen.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\Users\groov\src" />
+    <option name="cloneParentDir" value="D:\src" />
   </component>
 </application>
