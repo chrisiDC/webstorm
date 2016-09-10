@@ -38,6 +38,10 @@
           <option name="url" value="https://github.com/chrisiDC/midirouter.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/chrisiDC/csvagent.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="c:\src" />
