@@ -70,6 +70,7 @@
     </local-interpreter>
     <local-interpreter path="C:/Program Files/nodejs/node.exe">
       <version-cache version="4.4.7" last-modified="1467140852000" />
+      <npm-package value="C:/Program Files/nodejs/node_modules/npm" />
     </local-interpreter>
   </component>
 </application>
